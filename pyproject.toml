@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=78,<85"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "readonly-sqlite-adapter"
+version = "0.1.2a1"
+description = "Bounded SQLite read queries with engine authorization and typed receipts"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "THIRD-PARTY-NOTICES.md"]
+authors = [{name = "RUSSELL PHILIP SMITHSON"}]
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["e05*"]
