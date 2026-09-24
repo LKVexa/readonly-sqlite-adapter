@@ -1,0 +1,37 @@
+{
+ "build": "JY-S025-P001/0.1.1-partial run-0001",
+ "environment": {
+  "executor": "claude cowork session 01SaQzDRzMFXvRabmCC6JDJD",
+  "python": "3.11.15",
+  "platform": "Linux-6.18.44-fc-v24-x86_64-with-glibc2.39",
+  "location": "Anthropic cloud container (Linux)"
+ },
+ "checks": [
+  {
+   "id": "baseline-unit-tests",
+   "command": "python3 -m unittest discover -s tests -t .",
+   "result": "PASS 12/12",
+   "captured_at": "2026-09-14T19:04:04.743328+00:00"
+  },
+  {
+   "id": "audit-probes",
+   "command": "python3 probe script (recursive CTE, non-str sql, literal scan, NaN digest, timeout recovery, aliasing, refusal isolation)",
+   "result": "4 defects reproduced on baseline; all fixed",
+   "captured_at": "2026-09-14T19:04:04.743328+00:00"
+  },
+  {
+   "id": "candidate-unit-tests",
+   "command": "python3 -m unittest discover -s tests -t .",
+   "result": "PASS 18/18",
+   "captured_at": "2026-09-14T19:04:04.743328+00:00"
+  }
+ ],
+ "unrun_checks": [
+  "Windows-native launch UNRUN \u2014 no Windows runtime this session",
+  "independent review NOT PERFORMED",
+  "723-item program and gates",
+  "other engines",
+  "credential management"
+ ],
+ "note": "Evidence current for these inputs on this host only."
+}
