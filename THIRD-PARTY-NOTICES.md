@@ -1,7 +1,7 @@
 # License scope
 
 Original code and September 2026 modifications by RUSSELL PHILIP SMITHSON are
-provided under Apache 2.0; see LICENSE and NOTICE. Python/SQLite and build tools
+provided under GNU GPL version 3 only (GPL-3.0-only); see LICENSE and NOTICE. Python/SQLite and build tools
 are not bundled and retain their own licensing.
 
 # Third-party notices — JY-S025-P001
